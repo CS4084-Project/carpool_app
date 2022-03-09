@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class homepage extends AppCompatActivity {
         private Button passengerbutton;
         private Button driverbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.home);
 
         driverbutton=(Button) findViewById(R.id.driverButton);
         driverbutton.setOnClickListener(new View.OnClickListener() {

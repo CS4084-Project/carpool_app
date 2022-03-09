@@ -11,12 +11,17 @@ import android.widget.TextView;
 public class passengerhome extends AppCompatActivity {
 
 private Button homeb;
+TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_passengerhome);
+text = (TextView) findViewById(R.id.name);
 
+Intent intent = getIntent();
+String str = intent.getStringExtra("message");
+text.setText(str);
 
         homeb=(Button) findViewById(R.id.homep);
         homeb.setOnClickListener(new View.OnClickListener() {
@@ -30,7 +35,7 @@ private Button homeb;
 
     }
     public void homep(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, homepage.class);
         startActivity(intent);
     }
 }
