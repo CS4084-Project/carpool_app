@@ -22,11 +22,13 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="177dp"
+        android:layout_width="178dp"
         android:layout_height="0dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="455dp"
         android:text="Jack Busher - Waterford to Cork"
+        app:layout_constraintBottom_toTopOf="@+id/homep"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,14 +36,23 @@
         android:id="@+id/button4"
         android:layout_width="178dp"
         android:layout_height="71dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="551dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:background="#2B0808"
         android:backgroundTint="#F8F8F8"
         android:text="Dean Kelly - Cork to Dublin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/homep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="20dp"
+        android:text="HOME"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
